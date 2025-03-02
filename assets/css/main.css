@@ -39,7 +39,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7fcfc;
+  --background-color: rgba(132, 150, 136, 0.1);
   --surface-color: #F9F9F9;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .accent-background {
-  --background-color: #f7fcfc;
+  --background-color: rgba(132, 150, 136, 0.1);
   --default-color: #F9F9F9;
   --heading-color: #F9F9F9;
   --surface-color: #F9F9F9;
