@@ -8,7 +8,7 @@
   font-family: "Athena Light";
   font-style: normal;
   font-weight: 200; /* Ajuste conforme necessário */
-  src: url('../../assets/Athena-Light.ttf') format('truetype');
+  src: url('../../assets/fonts/Athena-Light.ttf') format('truetype');
 }
 
 :root {
