@@ -3,52 +3,60 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@font-face {
+  font-family: "Athena";
+  font-style: normal;
+  font-weight: 100;
+  src: url('/assets/fonts/Athena-Light.ttf') format('truetype');
+  }
+
 :root {
-  --default-font: "Mulish",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Lora",  sans-serif;
+  --default-font: "Poppins",  sans-serif;
+  --heading-font: "Athena",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #F9F9F9; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #555555; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #84c2ff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --accent-color: #849688; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #F9F9F9; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #F9F9F9; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #84c2ff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-hover-color: #849688; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #F9F9F9; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #F9F9F9; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #84c2ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #849688; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f7fcfc;
-  --surface-color: #ffffff;
+  --surface-color: #F9F9F9;
 }
 
 .dark-background {
   --background-color: #060606;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --default-color: #F9F9F9;
+  --heading-color: #F9F9F9;
+  --surface-color: #BEBEBE;
+  --contrast-color: #F9F9F9;
 }
 
 .accent-background {
   --background-color: #f7fcfc;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #ffffff;
+  --default-color: #F9F9F9;
+  --heading-color: #F9F9F9;
+  --surface-color: #F9F9F9;
 }
 
 /* Smooth scroll */
@@ -170,7 +178,7 @@ h6 {
 .php-email-form .error-message {
   display: none;
   background: #df1529;
-  color: #ffffff;
+  color: #F9F9F9;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -179,7 +187,7 @@ h6 {
 
 .php-email-form .sent-message {
   display: none;
-  color: #ffffff;
+  color: #F9F9F9;
   background: #059652;
   text-align: center;
   padding: 15px;
@@ -1056,7 +1064,6 @@ section,
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  transition: 0.3s;
   font-size: 32px;
   transition: ease-in-out 0.3s;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
