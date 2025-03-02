@@ -5,7 +5,7 @@
 /* Fonts */
 
 @font-face {
-  font-family: "Athena";
+  font-family: "Athena Light";
   font-style: normal;
   font-weight: 100;
   src: url('/assets/fonts/Athena-Light.ttf') format('truetype');
@@ -13,7 +13,7 @@
 
 :root {
   --default-font: "Poppins",  sans-serif;
-  --heading-font: "Athena",  sans-serif;
+  --heading-font: "Athena Light",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
 
