@@ -7,13 +7,14 @@
 @font-face {
   font-family: "Athena Light";
   font-style: normal;
-  src: url('/assets/fonts/Athena-Light.ttf') format('truetype');
-  }
+  font-weight: 200; /* Ajuste conforme necessário */
+  src: url('../../assets/Athena-Light.ttf') format('truetype');
+}
 
 :root {
-  --default-font: "Poppins",  sans-serif;
-  --heading-font: "Athena Light",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Poppins", sans-serif;
+  --heading-font: "Athena Light", sans-serif; /* Removido sans-serif */
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
