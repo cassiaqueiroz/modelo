@@ -536,6 +536,15 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+  .header .navmenu {
+    order: 2; /* Mantém o menu acima */
+  }
+
+  .header .cta-btn {
+    margin-right: 1.5em;
+    order: 1; /* Garante que o botão fique abaixo do menu */
+  }
 }
 
 /*--------------------------------------------------------------
