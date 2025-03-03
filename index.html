@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
   <head>
     <meta charset="utf-8">
@@ -347,22 +347,21 @@
           <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-4 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required="">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required="">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Seu Telefone" required="">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Seu Telefone" required>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 form-group mt-3">
-                <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Data"
-                  required="">
+                <input type="datetime-local" name="date" class="form-control datepicker" id="date" required>
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select name="doctor" id="doctor" class="form-select" required="">
+                <select name="doctor" id="doctor" class="form-select" required>
                   <option value="">Selecione o Especialista</option>
                   <option value="Doctor 1">Especialista 1</option>
                   <option value="Doctor 2">Especialista 2</option>
@@ -864,7 +863,32 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dateInput = document.getElementById("date");
 
+        // Define a data mínima para hoje no formato ISO (necessário para <input type="datetime-local">)
+        const now = new Date();
+        const formattedNow = now.toISOString().slice(0, 16); // YYYY-MM-DDTHH:MM
+
+        dateInput.min = formattedNow; // Impede selecionar datas passadas
+
+        // Ajusta o formato antes de enviar o formulário
+        dateInput.addEventListener("change", function () {
+          const selectedDate = new Date(this.value);
+          if (!isNaN(selectedDate)) {
+            const formattedDate = selectedDate.toLocaleString("pt-BR", {
+              day: "2-digit",
+              month: "2-digit",
+              year: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+            });
+            console.log("Data selecionada:", formattedDate); // Apenas para depuração
+          }
+        });
+      });
+    </script>
   </body>
 
 </html>
