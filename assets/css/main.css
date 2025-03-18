@@ -842,6 +842,21 @@ section,
   align-items: last baseline;
 }
 
+.hero .carousel-item .quote-icon-left,
+.hero .carousel-item .quote-icon-right {
+  color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.hero .carousel-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
 .hero .container {
   background: color-mix(in srgb, var(--surface-color), transparent 10%);
   position: relative;
