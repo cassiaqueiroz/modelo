@@ -607,7 +607,7 @@ h6 {
 }
 
 .footer .credits {
-  font-size: 13px;
+  font-size: 11px;
   padding-top: 5px;
 }
 
@@ -951,9 +951,8 @@ section,
 
 .hero .carousel-indicators li {
   cursor: pointer;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
   overflow: hidden;
-  border: 0;
+  border: 1px solid var(--accent-color);
   width: 12px;
   height: 12px;
   border-radius: 50px;
@@ -963,7 +962,7 @@ section,
 
 .hero .carousel-indicators li.active {
   opacity: 1;
-  background: var(--accent-color);
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
 /* Pre-cadastro */
