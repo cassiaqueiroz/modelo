@@ -818,6 +818,7 @@ section,
   object-fit: cover;
   object-position: center 25%;
   z-index: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
 }
 
 .hero .logo img {
@@ -826,7 +827,7 @@ section,
 
 @media (max-width: 768px) {
   .hero .logo img {
-    object-position: center calc(50% - 6em); /* Move a imagem para cima */
+    object-position: center calc(50% - 0.1em); /* Move a imagem para cima */
   }
 }
 
@@ -913,7 +914,7 @@ section,
   background: none;
   font-size: 26px;
   line-height: 0;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
   border-radius: 50px;
   color: var(--contrast-color);
   transition: 0.3s;
@@ -950,7 +951,7 @@ section,
 
 .hero .carousel-indicators li {
   cursor: pointer;
-  background: var(--contrast-color);
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
   overflow: hidden;
   border: 0;
   width: 12px;
