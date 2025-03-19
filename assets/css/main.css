@@ -1005,6 +1005,18 @@ section,
   font-weight: 700;
 }
 
+.about .content strong {
+  font-family: var(--heading-font);
+  font-size: larger;
+  font-weight: 700;
+  color: var(--highlight-color); /* Cor personalizada para dar destaque */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  background: #444444; /* Um gradiente sutil de fundo */
+  -webkit-background-clip: text; /* Aplica o gradiente apenas no texto */
+  color: transparent; 
+  transition: transform 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
