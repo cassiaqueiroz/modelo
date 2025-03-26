@@ -1253,36 +1253,6 @@ section,
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
-/* Garante que o formulário não ultrapasse a tela */
-.appointment .php-email-form {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Ajusta o comportamento do dropdown */
-.appointment .php-email-form select {
-  width: 100%; /* Garante que o select não ultrapasse o contêiner */
-  max-width: 100%;
-  white-space: nowrap; /* Evita quebras de linha no texto */
-}
-
-/* Corrige problemas de espaçamento nos inputs */
-.appointment .php-email-form .form-group {
-  width: 100%;
-}
-
-/* Media Query para telas menores */
-@media (max-width: 768px) {
-  .appointment .php-email-form .row {
-    flex-direction: column; /* Empilha os inputs verticalmente */
-  }
-
-  .appointment .php-email-form .form-group {
-    width: 100%;
-  }
-}
-
-
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
