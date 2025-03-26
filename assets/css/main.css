@@ -1044,6 +1044,10 @@ section,
   top: calc(50% - 47px);
 }
 
+.about .text-justify-custom  {
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1126,6 +1130,11 @@ section,
   font-size: 14px;
   margin-bottom: 0;
 }
+
+.features .text-justify-custom  {
+  text-align: justify;
+}
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1683,11 +1692,4 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
