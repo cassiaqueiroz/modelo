@@ -334,7 +334,8 @@
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+          <form action="https://formsubmit.co/cassiaqueirozcodelab@gmail.com" method="post" role="form"
+            class="php-email-form" data-form id="appointment-form">
             <div class="row">
               <div class="col-md-4 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
@@ -347,15 +348,15 @@
               </div>
             </div>
 
-            <div class="row mt-3">
+            <div class="row">
               <div class="col-md-4 form-group">
                 <input type="text" class="form-control" name="cpf" id="cpf" placeholder="Seu CPF" required>
               </div>
               <div class="col-md-4 form-group">
                 <select name="doctor" id="doctor" class="form-select" required>
                   <option value="">Selecione o Especialista</option>
-                  <option value="Doctor 1">Dra. Tainá Ripardo Guerra</option>
-                  <option value="Doctor 2">Dr. Marcelo Caname</option>
+                  <option value="Dra. Tainá Ripardo Guerra">Dra. Tainá Ripardo Guerra</option>
+                  <option value="Dr. Marcelo Caname">Dr. Marcelo Caname</option>
                 </select>
               </div>
             </div>
@@ -365,9 +366,10 @@
             </div>
 
             <div class="text-center mt-4">
-              <button type="submit" class="btn btn-primary">Agendar</button>
+              <button type="submit" class="btn btn-primary" data-button>Agendar</button>
             </div>
           </form>
+
 
         </div>
 
@@ -808,7 +810,7 @@
             </div>
 
             <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              <form action="https://formsubmit.co/cassiaqueirozcodelab@gmail.com" method="post" class="php-email-form" data-aos="fade-up"
                 data-aos-delay="500">
                 <div class="row gy-4">
 
@@ -863,6 +865,12 @@
             <p class="copyright">Copyright Revolução Psique. Todos os Direitos
               Reservados.</p>
           </div>
+          <div class="credits">
+            Desenvolvido por <a href="https://www.cassiaqueirozcodelab.com.br/"
+              style="color: #555555; font-weight: bold;" onmouseover="this.style.fontWeight='normal'"
+              onmouseout="this.style.fontWeight='bold'">
+              cassiaqueirozcodelab</a>..<br>
+          </div>
 
         </div>
       </div>
@@ -877,39 +885,14 @@
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const dateInput = document.getElementById("date");
+    <script src="assets/js/form.js"></script>
 
-        // Define a data mínima para hoje no formato ISO (necessário para <input type="datetime-local">)
-        const now = new Date();
-        const formattedNow = now.toISOString().slice(0, 16); // YYYY-MM-DDTHH:MM
-
-        dateInput.min = formattedNow; // Impede selecionar datas passadas
-
-        // Ajusta o formato antes de enviar o formulário
-        dateInput.addEventListener("change", function () {
-          const selectedDate = new Date(this.value);
-          if (!isNaN(selectedDate)) {
-            const formattedDate = selectedDate.toLocaleString("pt-BR", {
-              day: "2-digit",
-              month: "2-digit",
-              year: "numeric",
-              hour: "2-digit",
-              minute: "2-digit",
-            });
-            console.log("Data selecionada:", formattedDate); // Apenas para depuração
-          }
-        });
-      });
-    </script>
   </body>
 
 </html>
